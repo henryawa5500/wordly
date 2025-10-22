@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Guess Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game" role="application" aria-label="Word Guess Game">
+        <h1>Guess the 5-letter word</h1>
+        
+        <!-- Game board -->
+        <div id="board" aria-hidden="false"></div>
+
+        <!-- Virtual keyboard -->
+        <div class="keyboard" id="keyboard"></div>
+        
+        <!-- Message display -->
+        <div class="message" id="message">Loading word...</div>
+
+        <!-- Definition hint container -->
+        <div id="definition-hint" class="definition-hint" aria-live="polite"></div>
+
+        <!-- Score display (optional) -->
+        <div class="score">
+            <span id="wins">Wins: 0</span>
+            <span id="streak">Streak: 0</span>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <p class="instructions">Type letters or use the on-screen keyboard. Press Enter to submit.</p>
+            <p class="hint-text">A definition hint will be shown for 15 seconds before each word.</p>
+        </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
