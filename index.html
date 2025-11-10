@@ -9,6 +9,16 @@
 <body>
     <div class="game" role="application" aria-label="Word Guess Game">
         <h1>Guess the 5-letter word</h1>
+
+        <!-- Level Selection -->
+        <div class="level-selection">
+            <label>Select Level: </label>
+            <select id="levelSelect">
+                <option value="easy" selected>Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+            </select>
+        </div>
         
         <!-- Game board -->
         <div id="board" aria-hidden="false"></div>
@@ -22,16 +32,18 @@
         <!-- Definition hint container -->
         <div id="definition-hint" class="definition-hint" aria-live="polite"></div>
 
-        <!-- Score display (optional) -->
+        <!-- Score & Stats display -->
         <div class="score">
-            <span id="wins">Wins: 0</span>
-            <span id="streak">Streak: 0</span>
+            <span id="score"></span>
+            <span id="wins"></span>
+            <span id="streak"></span>
+            <span id="level"></span>
         </div>
 
         <!-- Footer -->
         <footer>
             <p class="instructions">Type letters or use the on-screen keyboard. Press Enter to submit.</p>
-            <p class="hint-text">A definition hint will be shown for 15 seconds before each word.</p>
+            <p class="hint-text">A definition hint will be shown for 20 seconds before each word.</p>
         </footer>
     </div>
 
