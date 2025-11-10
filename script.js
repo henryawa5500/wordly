@@ -127,7 +127,7 @@ async function showDefinitionHint() {
   hintOverlay.appendChild(hintModal);
   document.body.appendChild(hintOverlay);
 
-  let timeLeft = 10;
+  let timeLeft = 20;
   const countdownEl = hintModal.querySelector('.countdown');
 
   return new Promise(resolve => {
